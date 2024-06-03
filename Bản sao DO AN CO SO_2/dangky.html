@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <HEAD>
+        <title>
+           LINK
+            </title>
+            <meta charset="utf-8">
+           
+            <style>
+                body{
+                    box-sizing: border-box;
+                    text-align: center;
+                }      
+                input,select{
+                    padding: 12px;
+                    border-radius: 4px;
+                    border: solid 1px lightgray;
+                }       
+            </style>
+
+    <body >
+        <p style="font-size: x-large;">Đăng ký</p>
+        <br>
+        <br>
+        <input type="text" placeholder="Tên truy cập" style="width: 375px;">
+        <br>
+        <br>
+        <input type="password" placeholder="Mật khẩu" style="width: 375px;">
+        <br>
+        <br>
+        <input type="password" placeholder="Nhập lại mật khẩu " style="width: 375px;">
+        <br>
+        <br>
+        <input type="email" placeholder="Email" style="width: 375px;">
+        <br>      
+        <span style="font-size: 13px; margin-left: -50px;color: gray; " >bạn cần sử dụng email này trong trường hợp cần đặt lại mật khẩu</span>
+        <br>
+        <br>
+        
+        
+        <select style="width: 400px; height: 40px;">
+            <option value="viet Nam">Việt Nam</option>
+            <option value="USA">MỸ</option>
+            <option value="England">Anh</option>
+            <option value="China">Trung Quốc</option>
+        </select>
+        <br>
+        <br>
+        <br>
+        <span style="font-size: 13px; margin-left: -50px;color: gray; ">
+        <input type="checkbox">Tôi đồng ý  với<a style="color: rgb(37, 113, 221);" > Điều Khoản Dịch Vụ</a> và <a style="color: rgb(37, 113, 221);"> Chính Sách Bảo Mật</a>
+        
+        </span>
+        <br>
+        <br>
+        <input type="button" id="dangkyngay" value="Đăng Ký Ngay" style="background-color:  rgb(255, 81, 0); width: 400px;color: white;">
+        <script>
+            document.getElementById("dangkyngay").addEventListener("click", function(){
+                alert("Đăng ký tài khoản thành công");
+
+            });
+
+        </script>
+        
+        
+      
+        </body>
+    </html>

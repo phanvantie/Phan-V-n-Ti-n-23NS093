@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+ #cart-container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#cart-items {
+    list-style: none;
+    padding: 0;
+}
+
+#cart-items li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#cart-items img {
+    margin-right: 10px;
+}
+
+#back-to-shop {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#back-to-shop:hover {
+    background-color: #0056b3;
+}
+.remove-item {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.remove-item:hover {
+    background-color: #cc0000;
+}
+
+
+    </style>
+</head>
+<body>
+    <div id="cart-container">
+        <h1>Giỏ hàng của bạn</h1>
+        <ul id="cart-items">
+            <!-- Các sản phẩm trong giỏ hàng sẽ được thêm vào đây -->
+        </ul>
+        <button id="back-to-shop">Quay lại cửa hàng</button>
+    </div>
+    <script src="cart.js"></script>
+</body>
+</html>

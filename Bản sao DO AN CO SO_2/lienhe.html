@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web bán thức ăn </title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Style cho phần wrapper */
+     
+         #wrapper {
+            width: 100%;
+            height: 100vh;
+            /* display: flex;
+            flex-direction: column;
+            justify-content: space-between; */
+        }
+        
+        /* Style cho phần header */
+        #header {
+            width: 100%;
+            padding: 0px 30px;
+            margin-top: 33px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+         
+        /* Style cho menu */
+        #menu {
+            list-style: none;
+            display: flex;
+        }
+        
+        #menu .item {
+            margin: 0px 25px;
+        }
+        
+        #menu .item a {
+            color: #626A67;
+            text-decoration: none;
+        }
+        
+        /* Style cho actions */
+        #actions {
+            display: flex;
+        }
+        
+        #actions .item {
+            margin-left: 22px;
+        }
+
+        /* Style cho phần contact */
+        #contact {
+            padding: 20px 0;
+        }
+
+        #contact h2, #contact h3 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        #contact p {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        #contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #contact-form .form-group {
+            margin-bottom: 15px;
+        }
+
+        #contact-form .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        #contact-form .form-group input, #contact-form .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        #contact-form button {
+            width: 100%;
+            padding: 10px;
+            background: #333;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        #contact-form button:hover {
+            background: #555;
+        }
+
+        #map {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        #map iframe {
+            width: 100%;
+            height: 400px;
+            border: 0;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="wrapper">
+        <div id="header">
+            <a href="" class="logo">
+                <img src="assets/logo2.png" alt="">
+            </a>
+            <div id="menu">
+                <div class="item">
+                    <a href="index.html">Trang chủ</a>
+                </div>
+                <div class="item">
+                    <a href="sanpham.html">Sản phẩm</a>
+                </div>
+                <div class="item">
+                    <a href="blog.html">Blog</a>
+                </div>
+                <div class="item">
+                    <a href="lienhe.html">Liên hệ</a>
+                </div>
+            </div>
+            <div id="actions">
+                <div class="item">
+                    <a href="dangnhap.html"><img src="assets/user.png" alt=""></a>
+                </div>
+                <div class="item">
+                   
+                    <button id="giohang"><img src="assets/cart.png" alt="" ></button>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <!-- Thêm phần liên hệ ở đây -->
+        <div id="contact">
+            <h2>Liên hệ với chúng tôi</h2>
+            <p>Nếu bạn có bất kỳ câu hỏi nào, vui lòng điền vào biểu mẫu dưới đây và chúng tôi sẽ liên hệ lại với bạn trong thời gian sớm nhất.</p>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Họ tên:</label>
+                    <input type="text" id="name" name="name" placeholder="Nhập họ tên của bạn" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Nhập email của bạn" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Số điện thoại:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Nhập số điện thoại của bạn" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Tin nhắn:</label>
+                    <textarea id="message" name="message" placeholder="Nhập tin nhắn của bạn" rows="5" required></textarea>
+                </div>
+                <button type="submit">Gửi tin nhắn</button>
+            </form>
+            <div id="map">
+                <h3>Địa chỉ của chúng tôi</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4657.340134679589!2d108.25027510178876!3d15.974774364879945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314219b7501de701%3A0xd8f61319afabaab2!2zVHLGsOG7nW5nIMSR4bqhaSBo4buNYyBDTlRULVRUIFZp4buHdCAtIEjDoG4!5e0!3m2!1svi!2s!4v1716557560796!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+             
+            </div>
+        </div>
+        
+        <div id="footer">
+            <div class="box">
+                <div class="logo">
+                    <img src="assets/logo.png" alt="">
+                </div>
+                <p>Cung cấp sản phẩm với chất lượng an toàn cho quý khách</p>
+            </div>
+            <div class="box">
+                <h3>NỘI DUNG</h3>
+                <ul class="quick-menu">
+                    <div class="item">
+                        <a href="index.html">Trang chủ</a>
+                    </div>
+                    <div class="item">
+                        <a href="sanpham.html">Sản phẩm</a>
+                    </div>
+                    <div class="item">
+                        <a href="blog.html">Blog</a>
+                    </div>
+                    <div class="item">
+                        <a href="lienhe.html">Liên hệ</a>
+                    </div>
+                </ul>
+            </div>
+            <div class="box">
+                <h3>LIÊN HỆ</h3>
+                <p>zalo/sdt: 0396818819</p>
+                <form action="">
+                    <input type="text" placeholder="Địa chỉ email">
+                    <button>Nhận tin</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        document.getElementById("contact-form").addEventListener("submit", function(event) {
+            event.preventDefault(); // Ngăn chặn hành vi mặc định của form (tải lại trang)
+            alert("Đã gửi tin nhắn thành công!");
+            // Reset form sau khi gửi
+            document.getElementById("contact-form").reset();
+        });
+    </script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
